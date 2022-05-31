@@ -1,0 +1,166 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+
+.bar{
+    background-color:#DF4C73;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 3px;
+}
+  
+.topbox {
+    min-width: 100%;
+    height: 17%;
+}
+  
+.navbar {
+    height: 40px;
+    float: right;
+    margin-right: 50px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  .nav {
+    margin-right: 50px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.active, .nav:hover {
+    color: #DF4C73;
+}
+
+body{
+    background: linear-gradient(90deg, #B0DDE4 40%, #FFFFFF 40%);
+}
+
+h6{
+    margin: auto;
+    font-weight:bold;
+    font-family: 'Poppins', sans-serif
+}
+
+h5{
+    margin: auto;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+}
+
+.logindiv{
+    background-color:#00000000;
+    top: 50px;
+    margin:auto;
+    padding:15px;
+    width:55%;
+    height:70%;
+    position: relative;
+    -moz-box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    -khtml-box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0%;
+}
+
+.loginform{
+    width:50%;
+    height:70%;
+    position:absolute;
+    right:10%;
+    bottom:5%;
+}
+
+.label{
+    margin: auto;
+    left: 500px;
+    font-family: 'Montserrat';
+}
+
+.loginh{
+    text-align:center;
+    position: relative;
+    bottom: 30px;
+}
+
+.loginbtn{
+    background-color:#DF4C73;
+    border-color:#DF4C73;
+    color: #ffffff;
+    width:50%;
+    position: relative;
+    left: 90px;
+    font-weight:bold;
+}
+
+.loginbtn:hover{
+    background-color:#ffffff;
+    border-color:#DF4C73;
+    color: #DF4C73;
+
+}
+
+.loginbtn:focus{
+    background-color:#ffffff;
+    border-color:#DF4C73;
+    color: #DF4C73;
+    outline: none;
+
+}
+
+.forgot{
+    float:right;
+    color:#DF4C73;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif
+}
+
+.info{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0;
+}
+
+.form-control{
+    width: 100%;
+    margin: auto;
+    background-color: gray;
+    opacity: 0.3;
+    
+}
+
+.form-control:focus{
+    background-color: white;
+    border-color: #DF4C73;
+    border-width: 1px;
+    opacity: 1;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.form-control::placeholder{
+    color: black;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
