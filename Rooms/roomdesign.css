@@ -61,5 +61,33 @@
 
 h2 {
   display: inline
+}
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.container [class*='box'] {
+  width:280px;
+  height:280px;
+  float: left;
+  margin-right: 70px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+}
+
+.container .box1 {
+  background-color: white;
+}
+
+.container .box2 {
+  background-color: white;
+  position: relative;
+}
+
+.container .box3 {
+  background-color: white;
+  margin-right: 0;
 }

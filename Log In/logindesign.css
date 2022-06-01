@@ -55,10 +55,8 @@ h5{
 
 .logindiv{
     background-color:#00000000;
-    top: 50px;
     margin:auto;
-    padding:15px;
-    width:55%;
+    width:50%;
     height:70%;
     position: relative;
     -moz-box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.3);
@@ -121,7 +119,7 @@ h5{
 }
 
 .info{
-    width: 200px;
+    width: 190px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -129,8 +127,8 @@ h5{
 }
 
 .info img{
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     position: relative;
     margin: 0;
 }
