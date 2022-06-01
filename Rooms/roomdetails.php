@@ -12,7 +12,7 @@
         <img src = "logo.png" id = "logo">
         <div class = "navbar">
             <a href = "#" class = "nav"> Home </a>
-            <a href = "../Log In/login.html" class = "nav"> Log In </a>
+            <a href = "../Log In/login.php" class = "nav"> Log In </a>
             <a href = "#" class = "nav active"> Rooms </a>
             <a href="#aboutus" class = "nav">About Us</a>
         </div>

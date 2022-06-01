@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <html>
 <head>
     <title>Login</title>
@@ -17,23 +20,30 @@
         </div>
     </div>
     <div class="logindiv card">
-        <form class="loginform">
-            <h5 class="loginh">Welcome!</h5>
+        <form class = "loginform" method = "POST" action = "connectlogin.php">
+            <h5 class = "loginh">Welcome!</h5>
             <br>
-            <h6 class="label">Username</h6>
-            <input type="email" class="form-control" placeholder="Enter your username">
+            <h6 class = "label">Email</h6>
+            <input type = "email" class="form-control" name = "email" placeholder = "Enter your email" required>
             <br>
-            <h6 class="label">Password</h6>
-            <input type="password" class="form-control" placeholder="Enter your password">
-            <a class="forgot" href="#">Forgot Password?</a>
+            <h6 class = "label">Password</h6>
+            <input type = "password" class="form-control" name = "password" placeholder="Enter your password" required>
+            <a class = "forgot" href = "#">Forgot Password?</a>
             <br><br>
-            <input class="btn btn-primary loginbtn" type="submit" value="LOGIN">
+            <input class="btn btn-primary loginbtn" type="submit" value="LOGIN"><br>
+            <?php
+                    if(isset($_SESSION["error"])){
+                        echo '<script>alert("Incorrect email/password")</script>';
+                    }
+                ?>
         </form>
 
         <div class="info">
             <img src="logo.png" class="logopic">
         </div>
     </div>
-
 </body>
 </html>
+<?php
+    unset($_SESSION["error"]);
+?>

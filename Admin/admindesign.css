@@ -1,0 +1,107 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+.bar{
+  background-color:#DF4C73;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 3px;
+}
+
+.topbox {
+  min-width: 100%;
+  height: 17%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  height: 40px;
+  margin-left: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+
+.nav {
+  margin-right: 50px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+
+.active, .nav:hover {
+  color: #DF4C73;
+}
+
+#logo {
+  width: 8%;
+  height: 80%;
+  margin-left: 60px;
+  float: left;
+}
+
+.rentalbox table{
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.rentalbox {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 350px;
+    overflow: auto;
+    scrollbar-gutter: stable both-edges;
+}
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #CCCCCC;
+    overflow: auto;
+    border-radius: 8px;
+  
+}
+::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    border-radius: 8px;
+}
+
+.rentalbox table {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.rentalbox th {
+    font-weight: bolder;
+}
+.rentalbox button {
+    margin-right: 6px;
+}
+#add {
+    width:50px;
+    height:50px;
+    margin-left: auto;
+    color:white;
+    text-align:center;
+    font-size: 45px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #B0DDE4;
+    border-radius: 50%;
+    padding: 5px;
+}
