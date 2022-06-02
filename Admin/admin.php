@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="admindesign.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="admin.js"></script>
 </head>
 <body>
     <div class="bar"></div>
@@ -16,6 +16,8 @@
         <div class = "navbar">
             <a href = "#" class = "nav active"> Home</a>
         </div>
+        <button class = "logout"><a href = "../Log In/login.php" class = "logouttext">Log out</a></button>
+        
     </div>
     <h2>Rental Lists</h2> <br>
     <div class = "rentalbox">
@@ -45,8 +47,21 @@
                 ?>
                 </table>
     </div>
+    <div id = "addDetails">
+        <i id = "exit" class="fa fa-close" onclick = "closeAdd()"> </i>
+        <p style = "padding-top: 7px; font-size: 22px; font-weight: 500; text-align: center;"> Adding Rooms </p>
+        <form class = "addingRoom" method = "POST" action = "adminaddroom.php">
+            <p> Room Name: <input type = "text" name = "rname" maxlength = "10" id = "rname" required> </p>
+            <p> Room Description: <input type = "text" name = "rdescription" maxlength = "100" id = "rdescription" required> </p>
+            <p> Room Rate: <input type="number" step="0.01" name = "rrate" id = "rrate" required> </p>
+            <button type="submit" class="btn btn-success" name = "add">Add</button>
+        </form>
+    </div>
+    <div class = "addContainer" action = 'adminaddroom.php'>
     <div id = "add">
-            <i id = "plus" class="fa fa-plus" onclick = "openMessage()"></i>
+        <i id = "plus" class="fa fa-plus" onclick = "openAdd()"></i>
+        <i id = "changeicon" class="fa fa-caret-down" onclick = "closeAdd()"></i>
+    </div>
     </div>
 </body>
 </html>

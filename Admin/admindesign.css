@@ -32,11 +32,36 @@
   font-family: Montserrat;
   font-size: 14px;
   color: black;
-  font-weight: bold;
 }
 
 .active, .nav:hover {
   color: #DF4C73;
+  text-decoration: none;
+}
+
+.logout {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #286FB4;
+    float: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 100px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.logout:hover {
+    background-color: #DF4C73;
+}
+
+.logouttext, .logouttext:hover{
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
 }
 
 #logo {
@@ -83,7 +108,6 @@ h2 {
 
 .rentalbox table {
     font-family: 'Montserrat';
-    font-weight: bold;
 }
 .rentalbox th {
     font-weight: bolder;
@@ -94,14 +118,53 @@ h2 {
 #add {
     width:50px;
     height:50px;
-    margin-left: auto;
-    color:white;
+    margin: 0 auto;
     text-align:center;
-    font-size: 45px;
-    margin-right: 60px;
+    font-size: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.addContainer {
+    margin: 0 auto;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    color:white;
+    background-color: #B0DDE4;
     margin-bottom: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-    background-color: #B0DDE4;
-    border-radius: 50%;
-    padding: 5px;
+}
+
+.addContainer:hover {
+    background-color: #DF4C73;
+}
+#changeicon {
+    display: none;
+}
+#addDetails {
+    display: none;
+    position:fixed;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:600px; 
+    height:400px;
+    background-color:#B0DDE4;
+    border-radius: 10px;
+    z-index:100000;   
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#exit{
+    float: right;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+#exit:hover {
+    color: white;
 }
