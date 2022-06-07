@@ -27,13 +27,8 @@
             </div>
             <!-- Right-aligned links -->
             <div class="topnav-right">
-<<<<<<< Updated upstream
             <a href="../Log in/login.php">Log In</a>
             <a href="../Rooms/roomdetails.php">Room Rates</a>
-=======
-              <a href="login.php">Log In</a>
-              <a href="roomrates.php">Room Rates</a>
->>>>>>> Stashed changes
             </div>
           </div>
     </nav>
