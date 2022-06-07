@@ -47,21 +47,43 @@
                 ?>
                 </table>
     </div>
-    <div id = "addDetails">
-        <i id = "exit" class="fa fa-close" onclick = "closeAdd()"> </i>
-        <p style = "padding-top: 7px; font-size: 22px; font-weight: 500; text-align: center;"> Adding Rooms </p>
-        <form class = "addingRoom" method = "POST" action = "adminaddroom.php">
-            <p> Room Name: <input type = "text" name = "rname" maxlength = "10" id = "rname" required> </p>
-            <p> Room Description: <input type = "text" name = "rdescription" maxlength = "100" id = "rdescription" required> </p>
-            <p> Room Rate: <input type="number" step="0.01" name = "rrate" id = "rrate" required> </p>
-            <button type="submit" class="btn btn-success" name = "add">Add</button>
-        </form>
+    <div class="modal fade" id="addroom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Add Room </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="adminaddroom.php" method="POST">
+                    <div class="modal-body">
+                        <input type="hidden" name="update_id" id="update_id">
+                        <div class="form-group">
+                            <label> Room Name </label>
+                            <input type = "text" name = "rname" maxlength = "10" id = "rname" class = "form-control" placeholder = "Enter Room Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Room Description </label>
+                            <input type = "text" name = "rdescription" maxlength = "50" id = "rdescription" class = "form-control" placeholder = "Enter Room Description" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Room Rate </label>
+                            <input type = "number" step="0.01" name = "rrate" id = "rrate" class="form-control" placeholder = "Enter Room Rate" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" name="updatedata" class="btn btn-primary">Add Data</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <div class = "addContainer" action = 'adminaddroom.php'>
-    <div id = "add">
-        <i id = "plus" class="fa fa-plus" onclick = "openAdd()"></i>
-        <i id = "changeicon" class="fa fa-caret-down" onclick = "closeAdd()"></i>
-    </div>
+        <div id = "add">
+            <button id = 'add' class='btn btn-success editbtn' data-toggle='modal' data-target = '#addroom'><i style = "font-size: 30px;" class = "fa fa-plus"></i></button>
+        </div>
     </div>
 
     <!-- ##################################################################################### -->
