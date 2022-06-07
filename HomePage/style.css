@@ -445,7 +445,7 @@ footer p{
     
 }
 .links{
-    column-count: 1;
+    column-count: 3;
     column-gap: 2em;            
     position: relative;
     left: 100px;
