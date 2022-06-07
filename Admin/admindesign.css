@@ -1,12 +1,108 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
-.bar{
-  background-color:#DF4C73;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100%;
-  height: 5px;
+
+body{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height:auto;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    position: absolute;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    left: 50px;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #B0DDE4;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Centered section inside the top navigation */
+  .topnav-centered{
+    float: none;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .logopic{
+    width: 250px;
+    height: 250px;
+    top: 20px;
+    left: 630px;
+    position: relative;
+  }
+
+  .textpic{
+    width: 250px;
+    height: 250px;
+    top: 50px;
+    left: 600px;
+    position: relative;
+  }
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    position:absolute; 
+    left: 750px;
+    top: 30px;
+  }
+
+  .topnav-left {
+    position:absolute; 
+    left:440px;
+    top: 30px;
+  }
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+
+  .bar{
+    background-color:#DF4C73;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 5px;
 }
 
 .topbox {
@@ -81,9 +177,15 @@
     height: 100%;
 }
 
-h2 {
+.h2main{
     margin-left: 80px;
     margin-top: 40px;
+    position: relative;
+    top: 150px;
+    font-family: 'Poppins', sans-serif;
+    color: #DF4C73;
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 .rentalbox {
@@ -92,9 +194,12 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 350px;
+    height: 400px;
     overflow: auto;
     scrollbar-gutter: stable both-edges;
+    position: relative;
+    top: 150px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .announcebox {
@@ -106,6 +211,10 @@ h2 {
     height: 350px;
     overflow: auto;
     scrollbar-gutter: stable both-edges;
+    position: relative;
+    top: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:normal;
 }
 
 ::-webkit-scrollbar {
@@ -124,7 +233,7 @@ h2 {
 }
 
 .rentalbox table {
-    font-family: 'Montserrat';
+    font-family: 'Poppins', sans-serif;
 }
 .rentalbox th {
     font-weight: bolder;
@@ -134,7 +243,7 @@ h2 {
 }
 
 .announcebox table {
-    font-family: 'Montserrat';
+    font-family: 'Poppins', sans-serif;
 }
 .announcebox th {
     font-weight: bolder;
@@ -165,6 +274,8 @@ h2 {
     color:white;
     margin-bottom: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 150px;
 }
 
 .addContainer:hover {
@@ -180,6 +291,8 @@ h2 {
     background-color: #B0DDE4;
     margin-bottom: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 150px;
 }
 
 .addAnnounce:hover {
@@ -245,4 +358,52 @@ h2 {
 
 .modal-fade{
     width: 50%;
+}
+
+#edit{
+    
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #5dbea3;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+}
+
+#edit:hover{
+    color: #ffffff;
+    background-color: #5dbea3;
+}
+
+#del{
+    
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #dd7973;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+}
+
+#del:hover{
+    color: #ffffff;
+    background-color: #dd7973;
+}
+
+.btn-btn-danger{
+ color: #ffffff;
 }
