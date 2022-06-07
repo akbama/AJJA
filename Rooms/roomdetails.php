@@ -1,26 +1,41 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Rooms</title>
-    <link rel="stylesheet" href="rooms.css">
+    <link rel="stylesheet" type="text/css" href="rooms.css">
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@300&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+  <title>Rooms</title>
 </head>
+
 <body>
     <div class="bar"></div>
-      <div class = "topbox">
-        <img src = "logo.png" id = "logo">
-        <div class = "navbar">
-            <a href = "#" class = "nav"> Home </a>
-            <a href = "../Log In/login.php" class = "nav"> Log In </a>
-            <a href = "#" class = "nav active"> Rooms </a>
-            <a href="#aboutus" class = "nav">About Us</a>
-        </div>
-    </div>
-    
+    <div class="wrapper">
+    <nav>
+        <div class="topnav">
+
+            <!-- Centered link -->
+            <div class="topnav-centered">
+                <img src= "ajjalogo1.png" alt="AJJA Logo" class="logopic">
+            </div>
+          
+            <!-- Left-aligned links (default) -->
+            <div class="topnav-left">
+            <a href="rentalapp.html">Rent Application</a>
+            <a href="aboutus.html">About Us</a>
+            </div>
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+              <a href="../Log In/login.php">Log In</a>
+              <a href="#" class = "nav active">Room Rates</a>
+            </div>
+          </div>
+    </nav>
+    <br><br><br><br>
     <div class = "mainbox">
-        <img src = "icon1.png" id = "icon">
-        <h2>ROOMS</h2> <br>
+        <img src = "icon1.png" id = "icon"> 
+        <h2>ROOMS</h2> <br><br><br><br>
         <div class = "secondbox">
             <div class = "results">
             <?php include ('connect.php'); ?>
