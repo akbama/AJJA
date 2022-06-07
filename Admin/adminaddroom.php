@@ -12,13 +12,8 @@ if ($conn->connect_error) {
 }
 $result = $conn->query("SELECT * FROM `rental listing`") or die($conn->error);
 
-$roomid = 1;
-while($row = $result->fetch_assoc()) {
-    $roomid +=1;
-}
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $room_id = $_POST['rid'];
+    $roomid = $_POST['rid'];
     $newroomname = $_POST['rname'];
     $newdescription = $_POST['rdescription'];
     $newroomrate= $_POST['rrate'];

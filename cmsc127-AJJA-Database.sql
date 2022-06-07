@@ -92,6 +92,12 @@ INSERT INTO `rental listing` (`room_id`, `room_name`, `description`, `room_rate`
 --
 
 --
+-- Indexes for table `rental listing`
+--
+ALTER TABLE `rental listing`
+  ADD PRIMARY KEY (`room_id`);
+
+--
 -- Indexes for table `announcement`
 --
 ALTER TABLE `announcement`

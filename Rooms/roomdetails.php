@@ -22,7 +22,7 @@
           
             <!-- Left-aligned links (default) -->
             <div class="topnav-left">
-            <a href="rentalapp.html">Rent Application</a>
+            <a href="../HomePage/homepage.php">Announcements</a>
             <a href="aboutus.html">About Us</a>
             </div>
             <!-- Right-aligned links -->

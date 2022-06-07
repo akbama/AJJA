@@ -28,7 +28,6 @@
             <br>
             <h6 class = "label">Password</h6>
             <input type = "password" class="form-control" name = "password" placeholder="Enter your password" required>
-            <a class = "forgot" href = "#">Forgot Password?</a>
             <br><br>
             <input class="btn btn-primary loginbtn" type="submit" value="LOGIN"><br>
             <?php
