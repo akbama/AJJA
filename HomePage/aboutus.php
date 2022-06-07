@@ -64,6 +64,21 @@
         <h2>nationwide</h2>
         </div>
     </div>
+  
+  <div class="secbloock">
+    <img src= "ajjalogo.png" alt="AJJA Logo" class="img22">
+    <P>Contact Us</P>  
+    </div>
+	
+	<div class="firstbloock">
+        <div class="f11con">
+        </div>
+        <h2> Email:</h2>
+        <p> ajja4@gmail.com </p>
+        <h2> Contact Number: </h2>
+        <p> 0926 576 2491</p>
+		</div>
+		</div>
     
      <br>
   
