@@ -12,5 +12,8 @@ if ($conn->connect_error) {
 $roomid = 0;
 $result = $conn->query("SELECT * FROM `rental listing`") or die($conn->error);
 
+$announceid = 0;
+$result1 = $conn->query("SELECT * FROM `announcement`") or die($conn->error);
+
 $conn->close();
 ?>
