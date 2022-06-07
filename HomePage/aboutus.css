@@ -1,3 +1,4 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 html{
     overflow-y: scroll;
     overflow-x:hidden;
@@ -458,7 +459,6 @@ footer p{
 
 .links a{
     display: block;
-
 }
 
 .links a:hover{
@@ -531,7 +531,7 @@ footer a{
     height: 40%;
     background-color:#ffffff;
     position: relative;
-    top: 1360px;
+    top: 1430px;
     right: 0px;
     left: 250px;
     display: flex;
