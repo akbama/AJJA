@@ -2,8 +2,10 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="admindesign.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -15,16 +17,27 @@
     <script src="admin.js"></script>
 </head>
 <body>
-    <div class="bar"></div>
-    <div class = "topbox">
-    <img src = "logo.png" id = "logo">
-        <div class = "navbar">
-            <a href = "#" class = "nav active"> Home</a>
-        </div>
-        <button class = "logout"><a href = "../Log In/login.php" class = "logouttext">Log out</a></button>
-        
-    </div>
-    <h2>Rental Lists</h2> <br>
+<div class="bar"></div>
+<nav>
+        <div class="topnav">
+
+            <!-- Centered link -->
+            <div class="topnav-centered">
+                <img src= "ajjalogo1.png" alt="AJJA Logo" class="logopic">
+            </div>
+          
+            <!-- Left-aligned links (default) -->
+            <div class="topnav-left">
+            <a href="homepage.php">Home</a>
+            </div>
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+              <a href = "../Log In/login.php">Log out</a>
+            </div>
+          </div>
+    </nav>
+
+    <h2 class = 'h2main'>Rental Lists</h2> <br>
     <div class = "rentalbox">
         <?php include ('connectadmin.php'); ?>
                 <table class = "table">
@@ -43,9 +56,10 @@
                         <td><?php echo $row['description']; ?> </td>
                         <td><?php echo $row['room_rate']; ?> </td>
                         <td>
-                            <button id = 'edit' class='btn btn-info editbtn' data-toggle='modal' data-target='#editmodal'> Edit </button>
+                            <button id ='edit' class='btn btn-info editbtn' data-toggle='modal' data-target='#editmodal'> Edit </button>
                         </td>
                         <td>
+                            <button id ='del' class='btn btn-danger'> Delete </button>
                             <a href ="admindelroom.php?deleteid=<?php echo $row['room_id']; ?>" class="btn btn-danger"> Delete </a></button>
                         </td>
                         </tr>
@@ -57,7 +71,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> Add Room </h5>
+                    <h2 class="modal-title" id="exampleModalLabel"> Add Room </h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -135,7 +149,7 @@
             </div>
         </div>
     </div>
-    <h2>Announcements</h2> <br>
+    <h2 class = 'h2main'>Announcements</h2> <br>
     <div class = "announcebox">
         <?php include ('connectadmin.php'); ?>
                 <table class = "table">
