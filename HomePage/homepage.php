@@ -22,13 +22,13 @@
           
             <!-- Left-aligned links (default) -->
             <div class="topnav-left">
-            <a href="rentalapp.html">Rent Application</a>
+            <a href="#fifthbox">Announcements</a>
             <a href="aboutus.html">About Us</a>
             </div>
             <!-- Right-aligned links -->
             <div class="topnav-right">
-              <a href="login.html">Log In</a>
-              <a href="roomrates.html">Room Rates</a>
+              <a href="../Log in/login.php">Log In</a>
+              <a href="../Rooms/roomdetails.php">Room Rates</a>
             </div>
           </div>
     </nav>
@@ -71,9 +71,31 @@
         <form action="roomrates.html">
             <input type="submit" value="Room Rates" class="btnrooms"/>
         </form>
+        </div>
+    </div>
+    
+     <br>
+    <div id="fifthbox" class="fifthblock">
+    <br>
+    <h2>Announcements</h2>
+        <?php include ('../Admin/connectadmin.php'); ?>
+                <table class = "table">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Content</th>
+                        <th>Date </th>
+                        <th>Time </th>
+                    </tr>
+                <?php 
+                    while($row = $result1->fetch_assoc()) { ?>
+                        <td><?php echo $row['subject']; ?> </td>
+                        <td><?php echo $row['content']; ?> </td>
+                        <td><?php echo $row['date']; ?> </td>
+                        <td><?php echo $row['time']; ?> </td></tr>
+                    <?php } ?>
+                </table>
     </div>
 
-    </div>
     <footer>
         <div>
             <div class="footerlogo"></div>
@@ -91,7 +113,6 @@
                 <a href="#pp">Privacy Policy</a>
                 <a href="#tos">Terms of Service</a>   
             </div>
-
         </div>
     </footer>
     </div>    
