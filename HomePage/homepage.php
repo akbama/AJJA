@@ -68,7 +68,7 @@
         <p>emptying your life savings. It is </p>
         <p>time to invest in yourself by</p>
         <p>investing in your home.</p>
-        <form action="roomrates.html">
+        <form action="../Rooms/roomdetails.php">
             <input type="submit" value="Room Rates" class="btnrooms"/>
         </form>
         </div>
