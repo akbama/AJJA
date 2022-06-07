@@ -27,8 +27,8 @@
             </div>
             <!-- Right-aligned links -->
             <div class="topnav-right">
-              <a href="login.html">Log In</a>
-              <a href="roomrates.html">Room Rates</a>
+              <a href="../Log in/login.php">Log In</a>
+              <a href="../Rooms/roomdetails.php">Room Rates</a>
             </div>
           </div>
     </nav>
