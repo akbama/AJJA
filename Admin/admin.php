@@ -29,7 +29,7 @@
           
             <!-- Left-aligned links (default) -->
             <div class="topnav-left">
-            <a href="../HomePage/homepage.php">Home</a>
+            <a href="../HomePage/index.php">Home</a>
             </div>
             <!-- Right-aligned links -->
             <div class="topnav-right">

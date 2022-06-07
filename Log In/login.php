@@ -13,7 +13,7 @@
     <div class="bar"></div>
     <div class = "topbox">
         <div class = "navbar">
-            <a href = "../HomePage/homepage.php" class = "nav"> Home </a>
+            <a href = "../HomePage/index.php" class = "nav"> Home </a>
             <a href = "#" class = "nav active"> Log In </a>
             <a href = " ../Rooms/roomdetails.php"class = "nav"> Room Rates </a>
             <a href="../HomePage/aboutus.php" class = "nav">About Us</a>

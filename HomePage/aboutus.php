@@ -22,7 +22,7 @@
           
             <!-- Left-aligned links (default) -->
             <div class="topnav-left">
-            <a href="homepage.php">Announcements</a>
+            <a href="index.php">Announcements</a>
             <a href="aboutus.php" class = "nav active">About Us</a>
             </div>
             <!-- Right-aligned links -->
@@ -89,7 +89,7 @@
             <p>2021 © AJJA Apartelle</p>
             <p>All rights reserved.</p>
             <div class="links">
-                <a href="homepage.php">Home</a>
+                <a href="index.php">Home</a>
                 <a href="../Rooms/roomdetails.php">Pricing</a>
                 <a href="#">About Us</a>
             </div>
