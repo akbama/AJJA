@@ -29,7 +29,7 @@
           
             <!-- Left-aligned links (default) -->
             <div class="topnav-left">
-            <a href="homepage.php">Home</a>
+            <a href="../HomePage/homepage.php">Home</a>
             </div>
             <!-- Right-aligned links -->
             <div class="topnav-right">
@@ -79,6 +79,10 @@
                 <form action="adminaddroom.php" method="POST">
                     <div class="modal-body">
                         <input type="hidden" name="update_id" id="update_id">
+                        <div class="form-group">
+                            <label> Room ID </label>
+                            <input  type="number" min = 0 name = "rid" id = "rid" class="form-control" required>
+                        </div>
                         <div class="form-group">
                             <label> Room Name </label>
                             <input type = "text" name = "rname" maxlength = "10" id = "rname" class = "form-control" placeholder = "Enter Room Name" required>
@@ -187,20 +191,16 @@
                     <div class="modal-body">
                         <input type="hidden" name="update_id" id="update_id">
                         <div class="form-group">
+                            <label> Announcement ID </label>
+                            <input  type="number" min = 0 name = "aid" id = "aid" class="form-control" required>
+                        </div>
+                        <div class="form-group">
                             <label> Subject </label>
                             <input type = "text" name = "asubject" maxlength = "10" id = "asubject" class = "form-control" required>
                         </div>
                         <div class="form-group">
                             <label> Content </label>
                             <input  type = "text" name = "acontent" maxlength = "100" id = "acontent" class = "form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label> Date </label>
-                            <input  type="date" name = "adate" id = "adate" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label> Time </label>
-                            <input type="time" name = "atime" id = "atime" class="form-control" required>
                         </div>
                     </div>
                     <div class="modal-footer">

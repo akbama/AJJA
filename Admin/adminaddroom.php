@@ -18,6 +18,7 @@ while($row = $result->fetch_assoc()) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $room_id = $_POST['rid'];
     $newroomname = $_POST['rname'];
     $newdescription = $_POST['rdescription'];
     $newroomrate= $_POST['rrate'];

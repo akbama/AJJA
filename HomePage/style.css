@@ -11,6 +11,7 @@ html{
     margin: auto;
 }
 
+
 /* Add a black background color to the top navigation */
 .topnav {
     position: absolute;
@@ -79,7 +80,7 @@ html{
 
   .topnav-left {
     position:absolute; 
-    left:20px;
+    left:250px;
     top: 30px;
   }
   
