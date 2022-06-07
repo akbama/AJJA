@@ -16,7 +16,7 @@
             <a href = "../HomePage/homepage.php" class = "nav"> Home </a>
             <a href = "#" class = "nav active"> Log In </a>
             <a href = " ../Rooms/roomdetails.php"class = "nav"> Room Rates </a>
-            <a href="#aboutus" class = "nav">About Us</a>
+            <a href="../HomePage/aboutus.php" class = "nav">About Us</a>
         </div>
     </div>
     <div class="logindiv card">

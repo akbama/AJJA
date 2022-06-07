@@ -152,10 +152,8 @@ td {
   padding-left: 30px;
   margin: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 80%;
-  overflow: auto;
+  overflow: scroll;
   scrollbar-gutter: stable both-edges;
 }
 ::-webkit-scrollbar {
