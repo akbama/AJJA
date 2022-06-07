@@ -41,7 +41,7 @@
                         echo "<td>". $room_name ."</td>";
                         echo "<td>". $description ."</td>";
                         echo "<td>". $room_rate. "</td>";
-                        echo "<td> <button id = 'edit' class='btn btn-info'> Edit </button>";
+                        echo "<td> <button id = 'edit' class='btn btn-info editbtn' data-toggle='modal' data-target='#editmodal'> Edit </button>";
                         echo "<button id = 'del' class='btn btn-danger'> Delete </button></tr>";
                     }
                 ?>
@@ -62,6 +62,52 @@
         <i id = "plus" class="fa fa-plus" onclick = "openAdd()"></i>
         <i id = "changeicon" class="fa fa-caret-down" onclick = "closeAdd()"></i>
     </div>
+    </div>
+
+    <!-- ##################################################################################### -->
+
+<div class="modal fade" id="editmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel"> Edit Room Details </h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <form action="admineditroom.php" method="POST">
+
+                    <div class="modal-body">
+
+                        <input type="hidden" name="update_id" id="room_id" value="<?php echo $room_id; ?>">
+
+                        <div class="form-group">
+                            <label> Room Name </label>
+                            <input type="text" name="fname" id="room_name" class="form-control"
+                                placeholder="Enter room name" value="<?php echo $room_name; ?>">
+                        </div>
+
+                        <div class="form-group">
+                            <label> Room Description </label>
+                            <input type="text" name="lname" id="room_description" class="form-control"
+                                placeholder="Enter room description" value="<?php echo $description; ?>">
+                        </div>
+
+                        <div class="form-group">
+                            <label> Room Rate </label>
+                            <input type="number" name="course" id="room_rate" class="form-control"
+                                placeholder="Enter room rate" value="<?php echo $room_rate; ?>">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" name="updatedata" class="btn btn-primary">Update Data</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

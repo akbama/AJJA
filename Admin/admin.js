@@ -1,3 +1,10 @@
+$(document).ready(function () {
+    $('#edit').on('click', function() {
+        $('#editmodal').modal(show);
+       
+    });
+});
+
 function openAdd() {
     document.getElementById("addDetails").style.display = "block";
     document.getElementById("plus").style.display = "none";
@@ -8,3 +15,4 @@ function closeAdd() {
     document.getElementById("plus").style.display = "block";
     document.getElementById("changeicon").style.display = "none";
 }
+
