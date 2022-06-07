@@ -16,3 +16,13 @@ function closeAdd() {
     document.getElementById("changeicon").style.display = "none";
 }
 
+function openAdd2() {
+    document.getElementById("addDetails2").style.display = "block";
+    document.getElementById("plus").style.display = "none";
+    document.getElementById("changeicon").style.display = "block";
+}
+function closeAdd2() {
+    document.getElementById("addDetails2").style.display = "none";
+    document.getElementById("plus").style.display = "block";
+    document.getElementById("changeicon").style.display = "none";
+}

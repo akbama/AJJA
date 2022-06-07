@@ -76,6 +76,11 @@
     height: 100%;
 }
 
+.announcebox table{
+    width: 100%;
+    height: 100%;
+}
+
 h2 {
     margin-left: 80px;
     margin-top: 40px;
@@ -91,6 +96,18 @@ h2 {
     overflow: auto;
     scrollbar-gutter: stable both-edges;
 }
+
+.announcebox {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 350px;
+    overflow: auto;
+    scrollbar-gutter: stable both-edges;
+}
+
 ::-webkit-scrollbar {
     height: 5px;
     width: 10px;
@@ -115,6 +132,18 @@ h2 {
 .rentalbox button {
     margin-right: 6px;
 }
+
+.announcebox table {
+    font-family: 'Montserrat';
+}
+.announcebox th {
+    font-weight: bolder;
+}
+.announcebox button {
+    margin-right: 20px;
+}
+
+
 #add {
     width:60px;
     height:60px;
@@ -127,6 +156,7 @@ h2 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
 .addContainer {
     margin: 0 auto;
     width:60px;
@@ -136,6 +166,60 @@ h2 {
     margin-bottom: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
+
+.addContainer:hover {
+    background-color: #DF4C73;
+}
+
+.addAnnounce {
+    margin: 0 auto;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    color:white;
+    background-color: #B0DDE4;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.addAnnounce:hover {
+    background-color: #DF4C73;
+}
+
+
+#changeicon {
+    display: none;
+}
+#addDetails {
+    display: none;
+    position:fixed;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:600px; 
+    height:400px;
+    background-color:#B0DDE4;
+    border-radius: 10px;
+    z-index:100000;   
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#addDetails2 {
+    display: none;
+    position:fixed;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:600px; 
+    height:400px;
+    background-color:#B0DDE4;
+    border-radius: 10px;
+    z-index:100000;   
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 
 #exit{
     float: right;

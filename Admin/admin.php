@@ -131,5 +131,53 @@
             </div>
         </div>
     </div>
+    <h2>Announcements</h2> <br>
+    <div class = "announcebox">
+     <br>
+        <?php include ('connectadmin.php'); ?>
+                <table class = "table">
+                    <tr>
+                        <th>Announcement ID</th>
+                        <th>Subject</th>
+                        <th>Content</th>
+                        <th>Date </th>
+                        <th>Time </th>
+                        <th>Action</th>
+                    </tr>
+                <?php 
+                    while($row = $result1->fetch_assoc()) {
+                        $announce_id = $row["announce_id"];
+                        $subject = $row["subject"];
+                        $content = $row["content"];
+                        $date = $row["date"];
+                        $time = $row["time"];
+                        echo "<tr><td>". $announce_id ."</td>";
+                        echo "<td>". $subject ."</td>";
+                        echo "<td>". $content ."</td>";
+                        echo "<td>". $date . "</td>";
+                        echo "<td>". $time . "</td>";
+                        echo "<td> <button id = 'del' class='btn btn-danger'><a href='admindelannounce.php?deleteid='.$announce_id.''> Delete </a></button></tr>";
+                    }
+                ?>
+                </table>
+    </div>
+    <div id = "addDetails2">
+        <i id = "exit" class="fa fa-close" onclick = "closeAdd2()"> </i>
+        <p style = "padding-top: 7px; font-size: 22px; font-weight: 500; text-align: center;"> Create Announcement </p>
+        <form class = "addingAnnounce" method = "POST" action = "adminaddannounce.php">
+            <p> Subject <input type = "text" name = "asubject" maxlength = "10" id = "asubject" required> </p>
+            <p> Content <input type = "text" name = "acontent" maxlength = "100" id = "acontent" required> </p>
+            <p> Date <input type="date" name = "adate" id = "adate" required> </p>
+            <p> Time <input type="time" name = "atime" id = "atime" required> </p>
+            <button type="submit" class="btn btn-success" name = "add">Add</button>
+        </form>
+    </div>
+    <div class = "addAnnounce" action = 'adminaddannounce.php'>
+    <div id = "add">
+        <i id = "plus" class="fa fa-plus" onclick = "openAdd2()"></i>
+        <i id = "changeicon" class="fa fa-caret-down" onclick = "closeAdd2()"></i>
+    </div>
+    </div>
+    
 </body>
 </html>
