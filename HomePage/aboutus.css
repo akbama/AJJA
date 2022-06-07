@@ -475,3 +475,87 @@ footer a{
     font-family: 'Poppins', sans-serif;
 
 }
+
+.firstbloock{
+    background-color:#ffffff;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 2100px;
+    right: 0px;
+    left: 0px;
+
+}
+
+.f11con{
+    background-image: url("woman.webp");;
+    width: 800px;
+    height: 530px;
+    float: left;
+    margin-left: 200px;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70% 80%;
+    /* Magic! */
+    max-width: 50vw;
+}
+
+.firstbloock h2{
+    color: #000000;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 0.5;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width:90%
+    
+}
+
+.firstbloock p{
+    position: relative;
+    left: 50px;
+    top: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight:normal;
+    width:90%
+}
+
+/* second block */
+.secbloock{
+    width: 100%;
+    height: 40%;
+    background-color:#ffffff;
+    position: relative;
+    top: 1360px;
+    right: 0px;
+    left: 250px;
+    display: flex;
+    justify-content: center;
+    max-width: 50vw;
+
+}
+
+.img22{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 10px;
+    left: 200px;
+    max-width: 50vw;
+}
+
+.secbloock p{
+    color: #DF4C73;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    position: relative;
+    font-weight: 1000;
+    top: 125px;
+    right: 20px;
+}
