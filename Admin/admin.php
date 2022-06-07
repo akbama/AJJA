@@ -37,10 +37,8 @@
                         <th>Action </th>
                     </tr>
                 <?php while($row = $result->fetch_assoc()) { ?>
-                        
                     <tbody>
                         <tr>
-
                         <td><?php echo $row['room_id']; ?> </td>
                         <td><?php echo $row['room_name']; ?> </td>
                         <td><?php echo $row['description']; ?> </td>

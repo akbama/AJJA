@@ -71,11 +71,6 @@
   float: left;
 }
 
-.rentalbox table{
-    width: 100%;
-    height: 100%;
-}
-
 .announcebox table{
     width: 100%;
     height: 100%;
@@ -87,36 +82,30 @@ h2 {
 }
 
 .rentalbox {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     width: 80%;
     height: 350px;
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
     scrollbar-gutter: stable both-edges;
 }
 
 .announcebox {
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 80%;
     height: 350px;
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
     scrollbar-gutter: stable both-edges;
 }
 
 ::-webkit-scrollbar {
-    height: 5px;
     width: 10px;
 }
 ::-webkit-scrollbar-track {
     background-color: #CCCCCC;
     overflow: auto;
     border-radius: 8px;
-  
 }
 ::-webkit-scrollbar-thumb {
     background-color: #b0b0b0;
@@ -125,6 +114,7 @@ h2 {
 
 .rentalbox table {
     font-family: 'Montserrat';
+    max-width: 100%;
 }
 .rentalbox th {
     font-weight: bolder;
@@ -132,7 +122,6 @@ h2 {
 .rentalbox button {
     margin-right: 6px;
 }
-
 .announcebox table {
     font-family: 'Montserrat';
 }
@@ -142,7 +131,6 @@ h2 {
 .announcebox button {
     margin-right: 20px;
 }
-
 
 #add {
     width:60px;
