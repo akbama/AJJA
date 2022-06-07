@@ -13,9 +13,10 @@ if ($conn->connect_error) {
 
 
 if (isset($_GET['deleteid'])){
-    $announce_id = $_GET['deleteid'];
-    $conn->query("DELETE FROM `announcement` WHERE `announce_id`= $announce_id") or die($conn->error);
+    $id = $_GET['deleteid'];
+    $conn->query("DELETE FROM `announcement` WHERE `announce_id`= $id") or die($conn->error);
 
+    header("Location: admin.php");   
 }
 
 

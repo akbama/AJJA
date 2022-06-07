@@ -189,13 +189,13 @@ body{
 }
 
 .rentalbox {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     width: 80%;
     height: 400px;
     overflow: auto;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: hidden;
     scrollbar-gutter: stable both-edges;
     position: relative;
     top: 150px;
@@ -204,12 +204,10 @@ body{
 
 .announcebox {
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 80%;
     height: 350px;
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
     scrollbar-gutter: stable both-edges;
     position: relative;
     top: 150px;
@@ -218,14 +216,12 @@ body{
 }
 
 ::-webkit-scrollbar {
-    height: 5px;
     width: 10px;
 }
 ::-webkit-scrollbar-track {
     background-color: #CCCCCC;
     overflow: auto;
     border-radius: 8px;
-  
 }
 ::-webkit-scrollbar-thumb {
     background-color: #b0b0b0;
@@ -241,7 +237,6 @@ body{
 .rentalbox button {
     margin-right: 6px;
 }
-
 .announcebox table {
     font-family: 'Poppins', sans-serif;
 }
@@ -251,7 +246,6 @@ body{
 .announcebox button {
     margin-right: 20px;
 }
-
 
 #add {
     width:60px;
@@ -267,19 +261,16 @@ body{
 }
 
 .addContainer {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
     width:60px;
     height:60px;
     border-radius: 50%;
     color:white;
-    margin-bottom: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     position: relative;
     top: 150px;
-}
-
-.addContainer:hover {
-    background-color: #DF4C73;
 }
 
 .addAnnounce {

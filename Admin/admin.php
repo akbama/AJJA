@@ -39,7 +39,6 @@
 
     <h2 class = 'h2main'>Rental Lists</h2> <br>
     <div class = "rentalbox">
-     <br>
         <?php include ('connectadmin.php'); ?>
                 <table class = "table">
                     <tr>
@@ -50,10 +49,8 @@
                         <th>Action </th>
                     </tr>
                 <?php while($row = $result->fetch_assoc()) { ?>
-                        
                     <tbody>
                         <tr>
-
                         <td><?php echo $row['room_id']; ?> </td>
                         <td><?php echo $row['room_name']; ?> </td>
                         <td><?php echo $row['description']; ?> </td>
@@ -63,6 +60,7 @@
                         </td>
                         <td>
                             <button id ='del' class='btn btn-danger'> Delete </button>
+                            <a href ="admindelroom.php?deleteid=<?php echo $row['room_id']; ?>" class="btn btn-danger"> Delete </a></button>
                         </td>
                         </tr>
                         </tbody>
@@ -102,10 +100,8 @@
             </div>
         </div>
     </div>
-    <div class = "addContainer" action = 'adminaddroom.php'>
-        <div id = "add">
-            <button id = 'add' class='btn btn-success editbtn' data-toggle='modal' data-target = '#addroom'><i style = "font-size: 30px;" class = "fa fa-plus"></i></button>
-        </div>
+    <div class = "addContainer">
+        <button id = 'add' class='btn btn-success editbtn' data-toggle='modal' data-target = '#addroom'><i style = "font-size: 30px;" class = "fa fa-plus"></i></button>
     </div>
 
     <!-- ##################################################################################### -->
@@ -155,7 +151,6 @@
     </div>
     <h2 class = 'h2main'>Announcements</h2> <br>
     <div class = "announcebox">
-     <br>
         <?php include ('connectadmin.php'); ?>
                 <table class = "table">
                     <tr>
@@ -167,20 +162,14 @@
                         <th>Action</th>
                     </tr>
                 <?php 
-                    while($row = $result1->fetch_assoc()) {
-                        $announce_id = $row["announce_id"];
-                        $subject = $row["subject"];
-                        $content = $row["content"];
-                        $date = $row["date"];
-                        $time = $row["time"];
-                        echo "<tr><td>". $announce_id ."</td>";
-                        echo "<td>". $subject ."</td>";
-                        echo "<td>". $content ."</td>";
-                        echo "<td>". $date . "</td>";
-                        echo "<td>". $time . "</td>";
-                        echo "<td> <button id = 'del' class='btn btn-danger'><a href='admindelannounce.php?deleteid='.$announce_id.''> Delete </a></button></tr>";
-                    }
-                ?>
+                    while($row = $result1->fetch_assoc()) { ?>
+                        <td><?php echo $row['announce_id']; ?> </td>
+                        <td><?php echo $row['subject']; ?> </td>
+                        <td><?php echo $row['content']; ?> </td>
+                        <td><?php echo $row['date']; ?> </td>
+                        <td><?php echo $row['time']; ?> </td>
+                        <td><a href = "admindelannounce.php?deleteid=<?php echo $row['announce_id']; ?>" class="btn btn-danger"> Delete </a></button></tr>
+                    <?php } ?>
                 </table>
     </div>
     <div id = "addDetails2">
