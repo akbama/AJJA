@@ -26,7 +26,6 @@
     </div>
     <h2>Rental Lists</h2> <br>
     <div class = "rentalbox">
-     <br>
         <?php include ('connectadmin.php'); ?>
                 <table class = "table">
                     <tr>
@@ -87,10 +86,8 @@
             </div>
         </div>
     </div>
-    <div class = "addContainer" action = 'adminaddroom.php'>
-        <div id = "add">
-            <button id = 'add' class='btn btn-success editbtn' data-toggle='modal' data-target = '#addroom'><i style = "font-size: 30px;" class = "fa fa-plus"></i></button>
-        </div>
+    <div class = "addContainer">
+        <button id = 'add' class='btn btn-success editbtn' data-toggle='modal' data-target = '#addroom'><i style = "font-size: 30px;" class = "fa fa-plus"></i></button>
     </div>
 
     <!-- ##################################################################################### -->
@@ -140,7 +137,6 @@
     </div>
     <h2>Announcements</h2> <br>
     <div class = "announcebox">
-     <br>
         <?php include ('connectadmin.php'); ?>
                 <table class = "table">
                     <tr>
