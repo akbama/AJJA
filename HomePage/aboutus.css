@@ -1,0 +1,477 @@
+html{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height:auto;
+    max-width: 100%;
+}
+
+.wrapper{
+    max-width: 100%;
+    margin: auto;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    position: absolute;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    left: 50px;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #B0DDE4;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Centered section inside the top navigation */
+  .topnav-centered{
+    float: none;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .logopic{
+    width: 200px;
+    height: 190px;
+    top: 50px;
+    left: 640px;
+    position: relative;
+  }
+
+  .textpic{
+    width: 250px;
+    height: 250px;
+    top: 50px;
+    left: 600px;
+    position: relative;
+  }
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    position:absolute; 
+    left: 800px;
+    top: 30px;
+  }
+
+  .topnav-left {
+    position:absolute; 
+    left:20px;
+    top: 30px;
+  }
+  
+  /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+
+  .bar{
+    background-color:#DF4C73;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 5px;
+}
+
+.firstblock{
+    background-color:#E2F0F9;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 170px;
+    right: 0px;
+    left: 0px;
+}
+
+.f1con{
+    background-image: url("aboutus1.jpg");
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    margin-top: 60px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Magic! */
+    max-width: 100vw;
+}
+
+.firstblock h2{
+    color: #030303;
+    font-size: 50px;
+    font-weight: 1000;
+    line-height: 0.5;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    width:100%;
+    margin-left: 30px;
+}
+
+.firstblock p{
+    position: relative;
+    left: 50px;
+    top: 65px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight:normal;
+    width:90%
+}
+
+.btnmore{
+    position: relative;
+    left: 400px;
+    top: 150px;
+    background-color: #286FB4;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.btnmore:hover{
+    background-color: #DF4C73;
+}
+
+
+.thirdblock{
+    background-color: #ffffff;
+    width: 80%;
+    height: 400px;
+    position: relative;
+    top: 700px;
+    right: 0px;
+    left: 150px;
+    box-shadow: 10px 10px 10px #ddd;
+}
+
+.thirdblock h2{
+    color: #DF4C73;
+    font-size: 35px;
+    font-weight: 1000;
+    line-height: 0.5;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.thirdblock p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 0.5;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.img3{
+    position: relative;
+    object-fit: cover;
+    max-width: 100%;
+    top: -290px;
+    left: 800px;
+}
+
+.fourthblock{
+    background-color: #E2F0F9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:1200px;
+    right: 0px;
+    left: 0px;
+    
+}
+
+.serve{
+    padding-top: 250px;
+    padding-left: 1050px;
+}
+
+.f4con{
+    background-image: url("aboutus3.png");;
+    background-size: cover;
+    width: 1000px;
+    height: 100%;
+    float: left;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Magic! */
+    max-width: 60vw;
+    left:500px;
+}
+
+.fourthblock h2{
+    color: black;
+    font-size: 40px;
+    font-weight: 1000;
+    line-height: 0.9;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fourthblock p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:lighter;
+    line-height: 0.5;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.btnrooms{
+    position: relative;
+    left: 300px;
+    top: 150px;
+    background-color: #DF4C73;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.fifthblock{
+    background-color: #ffffff;
+    position: absolute;
+    top:2000px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 350px;
+    overflow: auto;
+    scrollbar-gutter: stable both-edges;   
+}
+
+.fifthblock table{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    box-shadow: 10px 10px 10px #ddd;
+    width: 100%;
+    height: 100%;
+}
+
+.fifthblock h2{
+    color: #000000;
+    font-size: 35px;
+    font-weight: 1000;
+    line-height: 0.3;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.vbar{
+    background-color: #DF4C73;
+    width: 8px;
+    height: 350px;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+
+
+.f5con{
+    background-image: url("img5.jpg");
+    position: relative;
+    width: 400px;
+    height: 350px;
+    float: right;
+    object-fit: cover;
+    background-size: cover;
+    /* Magic! */
+    max-width: 60vw;
+    right:200px;
+    top: 100px;
+}
+
+
+
+.steps h2{
+
+    color: #286FB4;
+    font-size: 35px;
+    font-weight: 1000;
+    line-height: 0.3;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 50x;
+    left: 700px;
+
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    color: #DF4C73;
+    font-size: 45px;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 130px;
+    left: 80px;
+
+}
+
+#word{
+    color: #000000;
+    font-size: 35px;
+    font-weight: 1000;
+    line-height: 0.3;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 50px;
+    left: 180px;
+}
+
+.steps p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight:lighter;
+    line-height: 0.5;
+    position: relative;
+    top: 50px;
+    left: 700px;
+
+}
+
+#catch{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight:lighter;
+    line-height: 0.5;
+    position: relative;
+    top: 300px;
+    left: 150px;
+}
+
+.btnapply{
+    position: relative;
+    left: 400px;
+    top: 150px;
+    background-color: #286FB4;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    top:-100px;
+    left: 200px;
+}
+
+.btnapply:hover{
+    background-color: #DF4C73;
+}
+
+footer{
+    position: absolute;
+    top: 3500px;
+    background-color: #B0DDE4;
+    width: 100%;
+    height: 200px;
+    left: 0px;
+}
+
+footer h2{
+    font-family: 'Oswald', sans-serif;
+    color: #DF4C73;
+    font-size: 45px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+footer h3{
+    position: relative;
+    top: 90px;
+}
+
+footer p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight:lighter;
+    line-height: 0.1;
+    position: relative;
+    top: 85px;
+    left: 60px;
+    
+}
+.links{
+    column-count: 3;
+    column-gap: 2em;            
+    position: relative;
+    left: 100px;
+    }
+
+.links a{
+    display: block;
+
+}
+
+.links a:hover{
+    color: #DF4C73;
+}
+
+footer a{
+    float: center;
+    color: #000000;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}

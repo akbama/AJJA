@@ -23,12 +23,17 @@
             <!-- Left-aligned links (default) -->
             <div class="topnav-left">
             <a href="#fifthbox">Announcements</a>
-            <a href="aboutus.html">About Us</a>
+            <a href="aboutus.php">About Us</a>
             </div>
             <!-- Right-aligned links -->
             <div class="topnav-right">
+<<<<<<< Updated upstream
             <a href="../Log in/login.php">Log In</a>
             <a href="../Rooms/roomdetails.php">Room Rates</a>
+=======
+              <a href="login.php">Log In</a>
+              <a href="roomrates.php">Room Rates</a>
+>>>>>>> Stashed changes
             </div>
           </div>
     </nav>
@@ -40,7 +45,7 @@
         <h2>Urban Location.</h2>
         <h2>Sophisticated Style.</h2>
         <p>This is the place to experience that perfect city life.</p>
-        <form action="aboutus.html">
+        <form action="aboutus.php">
             <input type="submit" value="Learn More" class="btnmore"/>
         </form>
 
@@ -104,9 +109,9 @@
             <p>2021 © AJJA Apartelle</p>
             <p>All rights reserved.</p>
             <div class="links">
-                <a href="homepage.html">Home</a>
-                <a href="roomrates.html">Pricing</a>
-                <a href="aboutus.html">About Us</a>
+                <a href="homepage.php">Home</a>
+                <a href="roomrates.php">Pricing</a>
+                <a href="aboutus.php">About Us</a>
                 <a href="#facebook">Facebook</a>
                 <a href="#instagram">Instagram</a>
                 <a href="#twitter">Twitter</a>
