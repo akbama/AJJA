@@ -178,12 +178,12 @@ body{
 }
 
 .h2main{
+    color: #000000;
     margin-left: 80px;
     margin-top: 40px;
     position: relative;
     top: 150px;
     font-family: 'Poppins', sans-serif;
-    color: #DF4C73;
     font-weight: bolder;
     font-size: 40px;
 }
@@ -256,8 +256,14 @@ body{
     border-radius: 50%;
     position: relative;
     top: 50%;
+    background-color: #286FB4;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    border: none;
+}
+
+#add:hover{
+    background-color: #DF4C73;
 }
 
 .addContainer {
@@ -267,29 +273,12 @@ body{
     width:60px;
     height:60px;
     border-radius: 50%;
+    
     color:white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     position: relative;
     top: 150px;
 }
-
-.addAnnounce {
-    margin: 0 auto;
-    width:60px;
-    height:60px;
-    border-radius: 50%;
-    color:white;
-    background-color: #B0DDE4;
-    margin-bottom: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-    position: relative;
-    top: 150px;
-}
-
-.addAnnounce:hover {
-    background-color: #DF4C73;
-}
-
 
 #changeicon {
     display: none;
@@ -393,8 +382,4 @@ body{
 #del:hover{
     color: #ffffff;
     background-color: #dd7973;
-}
-
-.btn-btn-danger{
- color: #ffffff;
 }

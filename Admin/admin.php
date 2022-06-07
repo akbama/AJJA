@@ -2,7 +2,8 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="admindesign.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
@@ -59,8 +60,7 @@
                             <button id ='edit' class='btn btn-info editbtn' data-toggle='modal' data-target='#editmodal'> Edit </button>
                         </td>
                         <td>
-                            <button id ='del' class='btn btn-danger'> Delete </button>
-                            <a href ="admindelroom.php?deleteid=<?php echo $row['room_id']; ?>" class="btn btn-danger"> Delete </a></button>
+                            <a id = 'del' href ="admindelroom.php?deleteid=<?php echo $row['room_id']; ?>" class="btn btn-danger"> Delete </a></button>
                         </td>
                         </tr>
                         </tbody>
@@ -168,27 +168,51 @@
                         <td><?php echo $row['content']; ?> </td>
                         <td><?php echo $row['date']; ?> </td>
                         <td><?php echo $row['time']; ?> </td>
-                        <td><a href = "admindelannounce.php?deleteid=<?php echo $row['announce_id']; ?>" class="btn btn-danger"> Delete </a></button></tr>
+                        <td><a id ='del' href = "admindelannounce.php?deleteid=<?php echo $row['announce_id']; ?>" class="btn btn-danger"> Delete </a></button></tr>
                     <?php } ?>
                 </table>
     </div>
-    <div id = "addDetails2">
-        <i id = "exit" class="fa fa-close" onclick = "closeAdd2()"> </i>
-        <p style = "padding-top: 7px; font-size: 22px; font-weight: 500; text-align: center;"> Create Announcement </p>
-        <form class = "addingAnnounce" method = "POST" action = "adminaddannounce.php">
-            <p> Subject <input type = "text" name = "asubject" maxlength = "10" id = "asubject" required> </p>
-            <p> Content <input type = "text" name = "acontent" maxlength = "100" id = "acontent" required> </p>
-            <p> Date <input type="date" name = "adate" id = "adate" required> </p>
-            <p> Time <input type="time" name = "atime" id = "atime" required> </p>
-            <button type="submit" class="btn btn-success" name = "add">Add</button>
-        </form>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="modal fade" id="addannounce" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel"> Create Announcement </h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="adminaddannounce.php" method="POST">
+                    <div class="modal-body">
+                        <input type="hidden" name="update_id" id="update_id">
+                        <div class="form-group">
+                            <label> Subject </label>
+                            <input type = "text" name = "asubject" maxlength = "10" id = "asubject" class = "form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Content </label>
+                            <input  type = "text" name = "acontent" maxlength = "100" id = "acontent" class = "form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Date </label>
+                            <input  type="date" name = "adate" id = "adate" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Time </label>
+                            <input type="time" name = "atime" id = "atime" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" name="updatedata" class="btn btn-primary">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class = "addAnnounce" action = 'adminaddannounce.php'>
-    <div id = "add">
-        <i id = "plus" class="fa fa-plus" onclick = "openAdd2()"></i>
-        <i id = "changeicon" class="fa fa-caret-down" onclick = "closeAdd2()"></i>
+    <div class = "addContainer">
+        <button id = 'add' class='btn btn-success editbtn' data-toggle='modal' data-target = '#addannounce'><i style = "font-size: 30px;" class = "fa fa-plus"></i></button>
     </div>
-    </div>
-    
 </body>
 </html>
