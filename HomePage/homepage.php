@@ -98,20 +98,14 @@
 
     <footer>
         <div>
-            <div class="footerlogo"></div>
             <h2>AJJA</h2>
             <h3>APARTELLE</h3>
             <p>2021 © AJJA Apartelle</p>
             <p>All rights reserved.</p>
             <div class="links">
-                <a href="homepage.php">Home</a>
-                <a href="roomrates.php">Pricing</a>
+                <a href="#">Home</a>
+                <a href="../Rooms/roomdetails.php">Pricing</a>
                 <a href="aboutus.php">About Us</a>
-                <a href="#facebook">Facebook</a>
-                <a href="#instagram">Instagram</a>
-                <a href="#twitter">Twitter</a>
-                <a href="#pp">Privacy Policy</a>
-                <a href="#tos">Terms of Service</a>   
             </div>
         </div>
     </footer>
