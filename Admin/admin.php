@@ -47,7 +47,7 @@
                             <button id = 'edit' class='btn btn-info editbtn' data-toggle='modal' data-target='#editmodal'> Edit </button>
                         </td>
                         <td>
-                            <button id = 'del' class='btn btn-danger'> Delete </button>
+                            <a href ="admindelroom.php?deleteid=<?php echo $row['room_id']; ?>" class="btn btn-danger"> Delete </a></button>
                         </td>
                         </tr>
                         </tbody>
