@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
     <script src="admin.js"></script>
 </head>
 <body>
@@ -27,24 +32,28 @@
                     <tr>
                         <th>Room ID</th>
                         <th>Room Name</th>
-                        <th>Decription</th>
+                        <th>Description</th>
                         <th>Room Rate </th>
                         <th>Action </th>
                     </tr>
-                <?php 
-                    while($row = $result->fetch_assoc()) {
-                        $room_id = $row["room_id"];
-                        $room_name = $row["room_name"];
-                        $description = $row["description"];
-                        $room_rate = $row["room_rate"];
-                        echo "<tr><td>". $room_id ."</td>";
-                        echo "<td>". $room_name ."</td>";
-                        echo "<td>". $description ."</td>";
-                        echo "<td>". $room_rate. "</td>";
-                        echo "<td> <button id = 'edit' class='btn btn-info editbtn' data-toggle='modal' data-target='#editmodal'> Edit </button>";
-                        echo "<button id = 'del' class='btn btn-danger'> Delete </button></tr>";
-                    }
-                ?>
+                <?php while($row = $result->fetch_assoc()) { ?>
+                        
+                    <tbody>
+                        <tr>
+
+                        <td><?php echo $row['room_id']; ?> </td>
+                        <td><?php echo $row['room_name']; ?> </td>
+                        <td><?php echo $row['description']; ?> </td>
+                        <td><?php echo $row['room_rate']; ?> </td>
+                        <td>
+                            <button id = 'edit' class='btn btn-info editbtn' data-toggle='modal' data-target='#editmodal'> Edit </button>
+                        </td>
+                        <td>
+                            <button id = 'del' class='btn btn-danger'> Delete </button>
+                        </td>
+                        </tr>
+                        </tbody>
+               <?php } ?>
                 </table>
     </div>
     <div id = "addDetails">
@@ -81,24 +90,24 @@
 
                     <div class="modal-body">
 
-                        <input type="hidden" name="update_id" id="room_id" value="<?php echo $room_id; ?>">
+                        <input type="hidden" name="room_id" id="room_id">
 
                         <div class="form-group">
                             <label> Room Name </label>
-                            <input type="text" name="fname" id="room_name" class="form-control"
-                                placeholder="Enter room name" value="<?php echo $room_name; ?>">
+                            <input type="text" name="room_name" id="room_name" class="form-control"
+                                placeholder="Enter room name">
                         </div>
 
                         <div class="form-group">
                             <label> Room Description </label>
-                            <input type="text" name="lname" id="room_description" class="form-control"
-                                placeholder="Enter room description" value="<?php echo $description; ?>">
+                            <input type="text" name="description" id="description" class="form-control"
+                                placeholder="Enter room description">
                         </div>
 
                         <div class="form-group">
                             <label> Room Rate </label>
-                            <input type="number" name="course" id="room_rate" class="form-control"
-                                placeholder="Enter room rate" value="<?php echo $room_rate; ?>">
+                            <input type="text" name="room_rate" id="room_rate" class="form-control"
+                                placeholder="Enter room rate">
                         </div>
 
                     </div>

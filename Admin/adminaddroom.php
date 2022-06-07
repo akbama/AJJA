@@ -5,6 +5,7 @@ $password = "";
 $database = "cmsc127-AJJA-Database";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -27,5 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     header("Location: admin.php");   
 }
 
+
 $conn->close();
+
 ?>
