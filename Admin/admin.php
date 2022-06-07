@@ -154,20 +154,14 @@
                         <th>Action</th>
                     </tr>
                 <?php 
-                    while($row = $result1->fetch_assoc()) {
-                        $announce_id = $row["announce_id"];
-                        $subject = $row["subject"];
-                        $content = $row["content"];
-                        $date = $row["date"];
-                        $time = $row["time"];
-                        echo "<tr><td>". $announce_id ."</td>";
-                        echo "<td>". $subject ."</td>";
-                        echo "<td>". $content ."</td>";
-                        echo "<td>". $date . "</td>";
-                        echo "<td>". $time . "</td>";
-                        echo "<td> <button id = 'del' class='btn btn-danger'><a href='admindelannounce.php?deleteid='.$announce_id.''> Delete </a></button></tr>";
-                    }
-                ?>
+                    while($row = $result1->fetch_assoc()) { ?>
+                        <td><?php echo $row['announce_id']; ?> </td>
+                        <td><?php echo $row['subject']; ?> </td>
+                        <td><?php echo $row['content']; ?> </td>
+                        <td><?php echo $row['date']; ?> </td>
+                        <td><?php echo $row['time']; ?> </td>
+                        <td><a href = "admindelannounce.php?deleteid=<?php echo $row['announce_id']; ?>" class="btn btn-danger"> Delete </a></button></tr>
+                    <?php } ?>
                 </table>
     </div>
     <div id = "addDetails2">
