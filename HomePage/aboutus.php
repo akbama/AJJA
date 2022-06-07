@@ -23,12 +23,12 @@
             <!-- Left-aligned links (default) -->
             <div class="topnav-left">
             <a href="homepage.php">Announcements</a>
-            <a href="aboutus.php">About Us</a>
+            <a href="aboutus.php" class = "nav active">About Us</a>
             </div>
             <!-- Right-aligned links -->
             <div class="topnav-right">
-              <a href="login.php">Log In</a>
-              <a href="roomrates.php">Room Rates</a>
+              <a href="../Log In/login.php">Log In</a>
+              <a href="../Rooms/roomrates.php">Room Rates</a>
             </div>
           </div>
     </nav>

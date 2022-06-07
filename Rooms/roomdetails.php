@@ -23,7 +23,7 @@
             <!-- Left-aligned links (default) -->
             <div class="topnav-left">
             <a href="../HomePage/homepage.php">Announcements</a>
-            <a href="aboutus.html">About Us</a>
+            <a href="../HomePage/aboutus.php">About Us</a>
             </div>
             <!-- Right-aligned links -->
             <div class="topnav-right">
