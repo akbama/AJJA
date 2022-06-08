@@ -78,7 +78,7 @@
         <h3>Facebook</h3>
         <p>AJJA Apartelle</p>
     </div>
-
+</div>
     <footer>
         <div>
             <h2>AJJA</h2>
@@ -92,7 +92,5 @@
             </div>
         </div>
     </footer>
-    </div>    
-    </div>
 </body>
 </html>
