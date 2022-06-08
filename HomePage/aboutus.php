@@ -11,7 +11,6 @@
 
 <body>
     <div class="bar"></div>
-    <div class="wrapper">
     <nav>
         <div class="topnav">
 
@@ -33,55 +32,53 @@
           </div>
     </nav>
 
-    <div class="firstblock">
-        <h2><center>Meet our team</center></h2>
-        <div class="f1con">
-        </div>
-    </div>
   
+    <div class="sixthblock">
+        <div class="f6con"></div>
+        <h2>Experience the</h2>
+        <h2 id="word">Lifestyle.</h2>
+        <h1>AJJA</h1>
+        <h3>APARTELLE</h3>
+        <p id="catch">Tranquility inside. City adventures outside. Discover both at AJJA Apartelle.</p>
+        <div class="steps">
+            <h2>Our mission</h2>
+            <p>Wherever you are in life. Whatever you're</p>
+            <P>doing. Home is a feeling everyone should</p>
+            <p>own, and we're on a mission to help</p>
+            <p>renters find it. We support families</p>
+            <p> looking for a place to call HOME</p>
+            <h2>Our vision</h2>
+            <p>We envision for a healthy</p>
+            <p>living space for our tenants</p>
+            <p>where they can grow as indivduals</p>
+            <p>and shine as a community.</p>
+            <p>This is the ideal space to</p>
+            <p>balance life, work and play.</p>
+            <h2>Our goals</h2>
+            <p>Our goal is to provide</p>
+            <p>stellar amenities at</p>
+            <p>your fingertips.</p>
+      </div>
+  
+    <div class="secblock">
+    <img src= "ajjalogo.png" alt="AJJA Logo" class="img2">
+    <p>Contact us!</P>
+    </div>
 
-    <div class="thirdblock">
-    <h2>Our mission</h2>
-    <p>Wherever you are in life. Whatever you're doing. </p>
-    <P>Home is a feeling everyone should own, and</p>
-    <P>we're on a mission to help renters find it. </p>
-    <p>We support families looking for a place to call HOME.</p>
-    <p>It is only natural that our company fosters a family</p>
-    <p>atmosphere, filled with some of the most diverse,</p>
-    <p>unique, and talented people who share one common goal:</p>
-    <p>creating a new chapter in renting for EVERYONE!</p>
-    <img src= "aboutus2.jpg" class="img3" width="400" height="400">
-    </div>
+    <div class="fifthblock">
+        <div class="f5con"></div>
+        <div class="vbar"></div>
+        <h2>Here's how you can find us!</h2>
+        <h3>Location</h3>
+        <p>46 1st Avenue Zone 7 Talomo, Davao City</p>
+        <h3>Email</h3>
+        <p>ajja4@gmail.com</p>
+        <h3>Contact numbers</h3>
+        <p> Tel: 0822336995 / Mobile: 09228623145</p>
+        <h3>Facebook</h3>
+        <p>AJJA Apartelle</p>
     </div>
 
-    <div class="fourthblock">
-        <div class="f4con"></div>
-        <div class="serve">
-        <h2>Serving</h2>
-        <h2>renters and</h2>
-        <h2>property</h2>
-        <h2>owners</h2>
-        <h2>nationwide</h2>
-        </div>
-    </div>
-  
-  <div class="secbloock">
-    <img src= "ajjalogo.png" alt="AJJA Logo" class="img22">
-    <P>Contact Us</P>  
-    </div>
-	
-	<div class="firstbloock">
-        <div class="f11con">
-        </div>
-        <h2> Email:</h2>
-        <p> ajja4@gmail.com </p>
-        <h2> Contact Number: </h2>
-        <p> 0926 576 2491</p>
-		</div>
-		</div>
-    
-     <br>
-  
     <footer>
         <div>
             <h2>AJJA</h2>
